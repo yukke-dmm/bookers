@@ -13,12 +13,19 @@ License URI: http://wrapbootstrap.com
 .header {
   position: relative;
 }
-.header .navbar-header {
+.header .navbar-header {ß
   padding: 0;
+}
+/*タイトル白に*/
+.navbar{
+  color: white;
+}
+.menu{
+  color: white;
 }
 .navbar-main {
   margin: 0;
-  background-color: #ffffff;
+  background-color: #000000;
   border: 0;
   border-bottom: 0 solid transparent;
   border-radius: 0;
@@ -44,13 +51,15 @@ License URI: http://wrapbootstrap.com
 }
 /* NAVBAR */
 .navbar-main .navbar-text {
-  color: #333333;
+  /*ここと*/
+  color: #9d9d9d; 
 }
 .navbar-main .navbar-nav a {
   outline: 0;
 }
 .navbar-main .navbar-nav > li > a {
-  color: #333333;
+  /*ここを変えるとmenuの文字色変わる*/
+  color: #9d9d9d;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   padding: 16px 30px 16px 20px;

@@ -1,0 +1,15 @@
+<%= render 'books/form', book: @newbook %>
+
+<h1>Books detail</h1>
+
+  <table>
+    <tbody>
+      <tr>
+        <td><%= @book.title %></td>
+        <td><%= @book.body %></td>
+        <td>  <%= link_to "Edit", book_path(@book.id) %></td>
+        <td>  <% if @book.user == current_user %>
+        	<%= link_to "Destroy", book_path(@book), method: :delete, data: { confirm: 'Are You Sure?'} %><% end %></td>
+      </tr>
+    </tbody>
+ </table>
