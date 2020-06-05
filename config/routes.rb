@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   root 'tops#top'
   get 'tops/about' => 'tops#about'
   resources :books, only: [:new, :create, :index, :show, :destroy]
-  resources :users, only: [:index, :show, :edit]
+  resources :users, only: [:index, :show, :edit, :update]
   
 end
