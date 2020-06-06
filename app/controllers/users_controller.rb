@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   before_action :authenticate_user!
 
   def index
+    @com = Book.new
   	@book = Book.new
   	@users = User.all
   end
