@@ -13,6 +13,10 @@ License URI: http://wrapbootstrap.com
 
 
 /*ここを付け足し*/
+h1, h2, h3, {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 table {
     width: 100%;
     max-width: 100%;
@@ -70,7 +74,7 @@ table>thead>tr>th, table>thead>tr>td, table>tbody>tr>th, table>tbody>tr>td, tabl
 .header {
   position: relative;
 }
-.header .navbar-header {ß
+.header .navbar-header {
   padding: 0;
 }
 /*タイトル白に*/

@@ -49,13 +49,8 @@
                 </li>
 
                 <li class="">
-                  <i class="fas fa-book"></i>
-                 <%= link_to 'Books', books_path %>
-                </li>
-
-                <li class="">
                   <%= link_to destroy_user_session_path, method: :delete  do%>
-                  <i class="fas fa-sign-out-alt">  Log out</i>
+                  <i class="fas fa-sign-out-alt">  logout</i>
                   <% end %>
                 </li>
 
@@ -68,7 +63,7 @@
                 </li>
 
                 <li class="">
-                  <%= link_to tops_about_path do %>
+                  <%= link_to home_about_path do %>
                   <i class="fas fa-paperclip">  About</i>
                <% end %>
                 </li>
@@ -81,7 +76,7 @@
 
                 <li class="">
                   <%= link_to new_user_session_path do %>
-                  <i class="fas fa-sign-in-alt">  Login</i>
+                  <i class="fas fa-sign-in-alt">  login</i>
                   <% end %>
                 </li>
               <% end %>
@@ -92,14 +87,15 @@
     </div>
 
 
+
 <% if flash[:notice]%>
   <p class="notice"><%= flash[:notice] %></p>
 <% end %>
 
-
-
-
-    <%= yield %>
+<div class="container">
+  <div class="row">
+    <%= yield %></div>
+  </div>
   </body>
   <footer>
     <div class="col-xs-3 col-xs-offset-9">CopyRight Infratop.inc</div>
